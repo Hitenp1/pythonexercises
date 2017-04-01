@@ -71,4 +71,17 @@ def rps() :
 
 rps()
 
+#Python password generator
+
+import string, random
+
+def genpass():
+  letters = ''.join([random.choice(string.ascii_letters) for i in range(6)])
+  nums = ''.join([random.choice('1234567890') for i in range(2)])
+  print(''.join(random.sample(letters+nums,8)))
+
+genpass()
+
+
+
 
