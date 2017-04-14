@@ -84,4 +84,33 @@ genpass()
 
 
 
+#some more excercises
+
+def highest (*args):
+  #print (max(args))
+
+  #print (sorted(args)[-1])
+
+  high = args[0]
+  for item in args:
+    if item > high:
+      high = item
+  print(high)
+
+highest(numbers comma seperated)
+
+
+def summary (arr):
+  items = sorted(arr)
+  first = items[0]
+  last = items[-1]
+  rangeitems = (last-first)
+  evens = len([i for i in items if i % 2==0])
+  print("The list has a min value of {}, max value of {}, the range is {} and has {} evens.".format(first, last, rangeitems, evens))
+
+summary([list])
+
+
+
+
 
